@@ -1,0 +1,15 @@
+For server side:
+    1. socket.bind() # Bind address(host name, port) on socket
+    2. socket.listen() # Initialize socket and start listening
+    3. socket.accept() # Wait request from client
+
+For client side:
+    1. socket.connect() # connect to server
+    2. socket.connect_ex() # An extend version for connect(), return error code instead of throw exception
+
+Standard socket method:
+    1. socket.recv() # Recieves TCP data
+    2. socket.recv_into() # Recieves data and write to buffer
+    3. socket.send() # Send a request to server
+    4. socket.sendall() # Send a completly request to server
+    5. socket.recvfrom() # Recieve UDP data
